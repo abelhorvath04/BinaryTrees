@@ -1,10 +1,10 @@
 # **Basic Binary Tree**
 
-A simple project for building and traversing a sorted binary tree.
+A simple project for building, drawing and traversing a sorted binary tree.
 
 ## **Features**
-- 🟢 **First**: In-Order and Post-Order Traversals.
-- 🔵 **Coming Soon**: Pre-Order and Level-Order Traversals.
+- In-Order, Post-Order, Post-Order and Level-Order traversals.
+- Drawing binary tree with org.barfuin.texttree.
 
 ## **Usage**
 1. **Clone the repository**:
