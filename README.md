@@ -4,7 +4,7 @@ A simple project for building, drawing and traversing a sorted binary tree.
 
 ## **Features**
 - In-Order, Post-Order, Post-Order and Level-Order traversals.
-- Drawing binary tree with org.barfuin.texttree.
+- Drawing binary tree with text-tree dependency.
 
 ## **Usage**
 1. **Clone the repository**:
