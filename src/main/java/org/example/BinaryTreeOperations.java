@@ -30,7 +30,7 @@ public class BinaryTreeOperations {
         System.out.printf("Height of the tree: %d%n", height);
 
         boolean balanced = isTreeBalanced(root);
-        System.out.printf("The tree is %s%n", balanced ? "balanced." : "not balanced.");
+        System.out.printf("The tree is %s%n", balanced ? "balanced. - AVL-Tree" : "not balanced. - Not AVL-tree");
     }
 
     private boolean isTreeBalanced(Node node) {
