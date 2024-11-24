@@ -29,7 +29,7 @@ public class BinaryTreeOperations {
     public void processList(ArrayList<Integer> valueList) {
         if (valueList.isEmpty()) {
             System.out.println("Empty tree");
-        } else if (!(valueList.isEmpty())) {
+        } else {
             clearRootAndLevel();
             addValuesToTheTree(valueList);
             printTreeAsText();
