@@ -27,20 +27,24 @@ public class BinaryTreeOperations {
      * @param valueList is the hardcoded / user-input integer-list
      */
     public void processList(ArrayList<Integer> valueList) {
-        clearRootAndLevel();
-        addValuesToTheTree(valueList);
-        printTreeAsText();
-        printPreOrder();
-        printPostOrder();
-        printInOrder();
-        printLevelOrder();
+        if (valueList.isEmpty()) {
+            System.out.println("Empty tree");
+        } else if (!(valueList.isEmpty())) {
+            clearRootAndLevel();
+            addValuesToTheTree(valueList);
+            printTreeAsText();
+            printPreOrder();
+            printPostOrder();
+            printInOrder();
+            printLevelOrder();
 
-        System.out.println();
-        int height = calculateHeight(root);
-        System.out.printf("Height of the tree: %d%n", height);
+            System.out.println();
+            int height = calculateHeight(root);
+            System.out.printf("Height of the tree: %d%n", height);
 
-        boolean balanced = isTreeBalanced(root);
-        System.out.printf("The tree is %s%n", balanced ? "balanced. - AVL-Tree" : "not balanced. - Not AVL-tree");
+            boolean balanced = isTreeBalanced(root);
+            System.out.printf("The tree is %s%n", balanced ? "balanced. - AVL-Tree" : "not balanced. - Not AVL-tree");
+        }
     }
 
     /**
@@ -246,7 +250,6 @@ public class BinaryTreeOperations {
      */
     private void printTreeAsText() {
         if (root == null) {
-            System.out.println("The tree is empty.");
             return;
         }
         System.out.println("The tree:");
