@@ -1,6 +1,13 @@
 package org.example;
 
+/**
+ * This class contains the welcome text and the main menu.
+ */
 public class Menu {
+
+    /**
+     * Prints the welcome text and the main menu for the user.
+     */
     public static void printMenu() {
         String binaryTreeText = """
                 ,,                                        ,                         \s
