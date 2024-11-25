@@ -30,7 +30,7 @@ public class BinaryTreeOperations {
         if (valueList.isEmpty()) {
             System.out.println("Empty tree");
         } else {
-            clearRootAndLevel();
+            clearRoot();
             addValuesToTheTree(valueList);
             printTreeAsText();
             printPreOrder();
@@ -238,7 +238,7 @@ public class BinaryTreeOperations {
      * use it more than once in running time.
      */
 
-    private void clearRootAndLevel() {
+    private void clearRoot() {
         root = null;
     }
 
